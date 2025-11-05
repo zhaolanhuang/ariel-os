@@ -1062,7 +1062,7 @@ modules:
     env:
       global:
         RUSTFLAGS:
-          - "-Clinker-plugin-lto"
+          - "-Clinker-plugin-lto=no"
 
   - name: linker-clang
     help: Use clang/lld to link
@@ -1070,10 +1070,21 @@ modules:
     env:
       global:
         RUSTFLAGS:
-          - "-Clinker=clang"
-          - "-Clink-arg=-fuse-ld=lld"
+          - "-Clinker=/media/zhaolan/Data-Big/TinyML/esp-clang-20.1.1/esp-clang/bin/clang"
+          - "-Clink-arg=-fuse-ld=/media/zhaolan/Data-Big/TinyML/esp-clang-20.1.1/esp-clang/bin/ld.lld"
+#          - "-Clink-arg=-fno-stack-protector"
+#          - "-Clink-arg=--config=/media/zhaolan/Data-Big/toolchain/bin/newlib-nano.cfg"
+#          - "-Clink-arg=-nostdlib"
+#          - "-Clink-arg=-nostdlib++"
+#          - "-Clink-arg=-nostartfiles"
+#          - "-Clink-arg=-L/lib64/"
+#          - "-Clink-arg=-rtlib=compiler-rt"
+#          - "-Clink-arg=--sysroot=/home/zhaolan/miniconda3/envs/mlir/x86_64-conda-linux-gnu/sysroot"
+#          - "-Clink-arg=-L/home/zhaolan/miniconda3/envs/mlir/x86_64-conda-linux-gnu/lib64"
+#          - "-Clink-arg=-L/home/zhaolan/miniconda3/envs/mlir/x86_64-conda-linux-gnu/sysroot/usr/lib64"
           - "-Clink-arg=--target=${RUSTC_TARGET}"
           - "-Clink-arg=-v"
+          - "-Clink-arg=-Wl,--nmagic"
         LINK_ARG_PREFIX: -Wl,
 
   - name: probe-rs
