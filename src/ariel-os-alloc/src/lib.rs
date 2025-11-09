@@ -15,8 +15,8 @@ pub use alloc::init;
 
 #[cfg(not(test))]
 mod alloc {
-    const CONFIG_HEAPSIZE: usize =
-        ariel_os_utils::usize_from_env_or!("CONFIG_HEAPSIZE", 2048, "heap size (in bytes)");
+    const CONFIG_HEAPSIZE: usize = 128*1024;
+      //  ariel_os_utils::usize_from_env_or!("CONFIG_HEAPSIZE", 2048, "heap size (in bytes)");
 
     /// Initializes the heap.
     ///

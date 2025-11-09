@@ -1070,8 +1070,8 @@ modules:
     env:
       global:
         RUSTFLAGS:
-          - "-Clinker=/media/zhaolan/Data-Big/TinyML/esp-clang-20.1.1/esp-clang/bin/clang"
-          - "-Clink-arg=-fuse-ld=/media/zhaolan/Data-Big/TinyML/esp-clang-20.1.1/esp-clang/bin/ld.lld"
+          - "-Clinker=/home/zhaolan/clang-esp-20.1.1/esp-clang/bin/clang"
+          - "-Clink-arg=-fuse-ld=/home/zhaolan/clang-esp-20.1.1/esp-clang/bin/ld.lld"
 #          - "-Clink-arg=-fno-stack-protector"
 #          - "-Clink-arg=--config=/media/zhaolan/Data-Big/toolchain/bin/newlib-nano.cfg"
 #          - "-Clink-arg=-nostdlib"
