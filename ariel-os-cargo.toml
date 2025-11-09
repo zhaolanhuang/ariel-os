@@ -38,19 +38,12 @@ embassy-stm32 = { git = "https://github.com/ariel-os/embassy", rev = "90c8da0964
 embassy-time = { git = "https://github.com/ariel-os/embassy", rev = "f9b4c8132b07ef696668005846ee2240a8f57573" }
 
 # ariel-os esp-hal fork, using branch = "v0.23.1+ariel-os-threads"
-#esp-alloc = { git = "https://github.com/ariel-os/esp-hal", rev = "aa8d1995fc06eb5e6d04a2022ecf3679b4929e63" }
-#esp-hal = { git = "https://github.com/ariel-os/esp-hal", rev = "aa8d1995fc06eb5e6d04a2022ecf3679b4929e63" }
-#esp-hal-embassy = { git = "https://github.com/ariel-os/esp-hal", rev = "aa8d1995fc06eb5e6d04a2022ecf3679b4929e63" }
-#esp-println = { git = "https://github.com/ariel-os/esp-hal", rev = "aa8d1995fc06eb5e6d04a2022ecf3679b4929e63" }
-#esp-wifi = { git = "https://github.com/ariel-os/esp-hal", rev = "aa8d1995fc06eb5e6d04a2022ecf3679b4929e63" }
-#xtensa-lx-rt = { git = "https://github.com/ariel-os/esp-hal", rev = "aa8d1995fc06eb5e6d04a2022ecf3679b4929e63" }
-
-esp-alloc = {git = "https://github.com/zhaolanhuang/esp-hal", rev = "30b3094d4a1f4b2831edbbf07cf0a50a12a59f84" }
-esp-hal = { git = "https://github.com/zhaolanhuang/esp-hal", rev = "30b3094d4a1f4b2831edbbf07cf0a50a12a59f84" }
-esp-hal-embassy = { git = "https://github.com/zhaolanhuang/esp-hal", rev = "30b3094d4a1f4b2831edbbf07cf0a50a12a59f84" }
-esp-println = { git = "https://github.com/zhaolanhuang/esp-hal", rev = "30b3094d4a1f4b2831edbbf07cf0a50a12a59f84" }
-esp-wifi = { git = "https://github.com/zhaolanhuang/esp-hal", rev = "30b3094d4a1f4b2831edbbf07cf0a50a12a59f84" }
-xtensa-lx-rt = { git = "https://github.com/zhaolanhuang/esp-hal", rev = "30b3094d4a1f4b2831edbbf07cf0a50a12a59f84" }
+esp-alloc = { git = "https://github.com/ariel-os/esp-hal", rev = "aa8d1995fc06eb5e6d04a2022ecf3679b4929e63" }
+esp-hal = { git = "https://github.com/ariel-os/esp-hal", rev = "aa8d1995fc06eb5e6d04a2022ecf3679b4929e63" }
+esp-hal-embassy = { git = "https://github.com/ariel-os/esp-hal", rev = "aa8d1995fc06eb5e6d04a2022ecf3679b4929e63" }
+esp-println = { git = "https://github.com/ariel-os/esp-hal", rev = "aa8d1995fc06eb5e6d04a2022ecf3679b4929e63" }
+esp-wifi = { git = "https://github.com/ariel-os/esp-hal", rev = "aa8d1995fc06eb5e6d04a2022ecf3679b4929e63" }
+xtensa-lx-rt = { git = "https://github.com/ariel-os/esp-hal", rev = "aa8d1995fc06eb5e6d04a2022ecf3679b4929e63" }
 
 # branch = "v0.6.2+ariel-os"
 embedded-test = { git = "https://github.com/ariel-os/embedded-test", rev = "20642538eb4e6fa44b5f37723b07946c74b5c757" }
