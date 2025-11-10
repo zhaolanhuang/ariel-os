@@ -1072,7 +1072,7 @@ modules:
         RUSTFLAGS:
           - "-Clinker=clang"
           - "-Clink-arg=-fuse-ld=lld"
-          - "-Clink-arg=--config=/media/zhaolan/Data-Big/toolchain/bin/newlib-nano.cfg"
+#          - "-Clink-arg=--config=/media/zhaolan/Data-Big/toolchain/bin/newlib-nano.cfg"
 #          - "-Clink-arg=-nostdlib"
 #          - "-Clink-arg=-nostdlib++"
 #          - "-Clink-arg=-nostartfiles"
@@ -1083,6 +1083,7 @@ modules:
 #          - "-Clink-arg=-L/home/zhaolan/miniconda3/envs/mlir/x86_64-conda-linux-gnu/sysroot/usr/lib64"
           - "-Clink-arg=--target=${RUSTC_TARGET}"
           - "-Clink-arg=-v"
+#          - "-Clink-arg=-Wl,--error-limit=0"
         LINK_ARG_PREFIX: -Wl,
 
   - name: probe-rs
